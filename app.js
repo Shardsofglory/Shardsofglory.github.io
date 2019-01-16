@@ -4,16 +4,14 @@ let bombs;
 let remaining;
 let revealed; //variables of the statusFIELDs
 
-function array () {
-const MATRIX = new Array(ROWS); //Arrays for FIELDs, GRAPHICs and the MATRIX
+const MATRIX = new Array(ROWS); //Arrays for FIELDs, GRAPHICs and the tile 
 const GRAPHIC = new Array(ROWS); //New Array because we need an array with a particular amount of elements
 const FIELD = new Array(ROWS);
 for (let i = 0; i < MATRIX.length; i++) { //creates the different levels of our MATRIX
   MATRIX[i] = new Array(COLUMNS);
   GRAPHIC[i] = new Array(COLUMNS);
   FIELD[i] = new Array(COLUMNS)
-  }
-}  
+}
 
 let status = document.getElementById('state'); //"status" stores the reference/points to HTML Element Label 
 status.addEventListener('click', init) //click event will be fires on mousedown, "click" fires the init function
