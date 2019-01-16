@@ -115,7 +115,7 @@ function click(event) { //adding eventlistener
     }
     event.preventDefault(); //dont open contextmenu
   }
-  status.innerHTML = 'Übrige Bomben: ' + remaining; //Show remaining bombs in HTML
+  status.innerHTML = 'Bombs left: ' + remaining; //Show remaining bombs in HTML
 
   if (event.which == 1 && GRAPHIC[row][column] != 'save') { //leftclick and status is not "save", but it can be "initial" and "surprise"
     if (MATRIX[row][column] == 'bomb') { //if it is a bomb then show all bombs
